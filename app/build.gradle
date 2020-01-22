@@ -16,6 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 }
 
 dependencies {
@@ -26,6 +30,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation 'com.hp.jipp:jipp-core:0.6.15'
-    implementation 'com.hp.jipp:jipp-pdl:0.6.15' // Only needed if transforming PDLs
+    implementation 'com.hp.jipp:jipp-core:0.6.22'
+    implementation 'com.hp.jipp:jipp-pdl:0.6.22' // Only needed if transforming PDLs
+
+//    implementation 'org.apache.pdfbox:pdfbox:2.0.16'
+//    implementation 'org.apache.pdfbox:fontbox:2.0.16'
 }

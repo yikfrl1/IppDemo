@@ -15,23 +15,77 @@
         android:gravity="center"
         android:hint="ipp_path"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="get printer info" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/send_file"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="send_file" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get printer info" />
 
-    <Button
-        android:id="@+id/get_job_status"
-        android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/send_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send_image" />
+
+        <Button
+            android:id="@+id/get_job_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get_job_status" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="get_job_status" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/PCLmTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生成PCLm" />
+
+        <Button
+            android:id="@+id/send_pclm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send_file_pclm" />
+
+        <Button
+            android:id="@+id/send_pwg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send_file_pwg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/create_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="create_job" />
+
+        <Button
+            android:id="@+id/send_document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send_document" />
+
+    </LinearLayout>
+
+
 
     <TextView
         android:id="@+id/message_received"
